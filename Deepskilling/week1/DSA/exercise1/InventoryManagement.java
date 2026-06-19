@@ -1,8 +1,5 @@
 package Deepskilling.week1.DSA.exercise1;
 
-import java.util.*;
-
-
 import java.util.HashMap;
 
 class Product {
