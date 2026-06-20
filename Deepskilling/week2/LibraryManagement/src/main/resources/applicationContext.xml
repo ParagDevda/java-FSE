@@ -6,7 +6,12 @@
 
     <!-- bean definitions here -->
     
-    <bean class="com.library.service.BookService"  id ="BS1" ></bean>
-    <bean class="com.library.repository.BookRepository"  id="BR1"></bean>
+    <bean class="com.library.repository.BookRepository"  id="BR1">
+    </bean>
+    <bean class="com.library.service.BookService"  id ="BS1" >
+    <property name="bookRepository"
+                  ref="BR1"/>
+    
+    </bean>
 
 </beans>
